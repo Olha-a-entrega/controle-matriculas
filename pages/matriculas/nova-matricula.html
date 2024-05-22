@@ -255,238 +255,253 @@
                 <i id="bannerClose"></i>
               </div>
             </div>
-            <div class="d-xl-flex justify-content-between align-items-start">
-              <h2 class="text-dark font-weight-bold mb-2">Matrículas</h2>
-              <div class="d-sm-flex justify-content-xl-between align-items-center mb-2">
-                <div class="btn-group bg-white p-3" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-link text-light py-0 border-right">
-                    7 Dias
-                  </button>
-                  <button type="button" class="btn btn-link text-dark py-0 border-right">
-                    1 Mês
-                  </button>
-                  <button type="button" class="btn btn-link text-light py-0">3 Meses</button>
-                </div>
-              </div>
+            <div class="d-xl-flex justify-content-between align-items-start mb-2">
+              <h2 class="text-dark font-weight-bold mb-2">Nova matrícula</h2>
             </div>
-            <div class="row">
-              <div class="card w-100">
-                <div class="card-body">
-                  <div class="d-flex justify-content-between mb-2">
-                    <h4 class="card-title">Lista de matriculas</h4>
-                    <a
-                      href="./nova-matricula.html"
-                      class="btn btn-primary mr-2 rounded-lg d-flex align-items-center"
-                    >
-                      <i class="mdi mdi-account-plus mr-1"></i>
-                      Nova matrícula
-                    </a>
+            <div class="card">
+              <form class="d-flex flex-column card-body">
+                <h4 class="card-title">Dados do aluno</h4>
+                <div class="forms-sample w-100 row">
+                  <div class="form-group col-md-3">
+                    <label for="exampleInputName1">Nome </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputName1"
+                      placeholder="Nome"
+                    />
                   </div>
-
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th>Nome</th>
-                        <th>Série/ano</th>
-                        <th>Turno</th>
-                        <th>Nome do responsável</th>
-                        <th>Telefone do responsável</th>
-                        <th>Email do responsável</th>
-                        <th>Data</th>
-                        <th>Status</th>
-                        <th></th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Rochele Berta</td>
-                        <td>2° ano</td>
-                        <td>Tarde</td>
-                        <td>Dayane Berta</td>
-                        <td>(18) 9393-9393</td>
-                        <td>daybertinhasoumaiseu@gmail.com</td>
-                        <td>01/05/2024</td>
-                        <td><label class="badge badge-danger">Desistente</label></td>
-                        <td>
-                          <div class="d-flex">
-                            <button class="bg-transparent border-0">
-                              <i class="mdi mdi-eye"></i>
-                            </button>
-                            <button class="bg-transparent border-0">
-                              <i class="mdi mdi-delete"></i>
-                            </button>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Bruno Rodrigues</td>
-                        <td>4° ano</td>
-                        <td>Tarde</td>
-                        <td>Terezinha Campinal</td>
-                        <td>(18) 9494-9393</td>
-                        <td>terezainha@gmail.com</td>
-                        <td>18/05/2024</td>
-                        <td>
-                          <label class="badge badge-primary">Aguardando pagamento</label>
-                        </td>
-                        <td>
-                          <div class="d-flex">
-                            <button class="bg-transparent border-0">
-                              <i class="mdi mdi-eye"></i>
-                            </button>
-                            <button class="bg-transparent border-0">
-                              <i class="mdi mdi-delete"></i>
-                            </button>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Luísa Rodrigues</td>
-                        <td>2° ano</td>
-                        <td>Tarde</td>
-                        <td>Terezinha Campinal</td>
-                        <td>(18) 9494-9393</td>
-                        <td>terezainha@gmail.com</td>
-                        <td>18/05/2024</td>
-                        <td>
-                          <label class="badge badge-primary">Aguardando pagamento</label>
-                        </td>
-                        <td>
-                          <div class="d-flex">
-                            <button class="bg-transparent border-0">
-                              <i class="mdi mdi-eye"></i>
-                            </button>
-                            <button class="bg-transparent border-0">
-                              <i class="mdi mdi-delete"></i>
-                            </button>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Marcelo Tefézio</td>
-                        <td>2° ano</td>
-                        <td>Manhã</td>
-                        <td>Claudia Lindaura</td>
-                        <td>(18) 9876-1578</td>
-                        <td>marcelineclaudiaamoreterno@gmail.com</td>
-                        <td>19/05/2024</td>
-                        <td>
-                          <label class="badge badge-warning"
-                            >Aguardando termo de compromisso</label
-                          >
-                        </td>
-                        <td>
-                          <div class="d-flex">
-                            <button class="bg-transparent border-0">
-                              <i class="mdi mdi-eye"></i>
-                            </button>
-                            <button class="bg-transparent border-0">
-                              <i class="mdi mdi-delete"></i>
-                            </button>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Murilo Dantas</td>
-                        <td>1° ano</td>
-                        <td>Manhã</td>
-                        <td>Roberto Carlos</td>
-                        <td>(18) 38388-9874</td>
-                        <td>murilodantasengenharia@gmail.com</td>
-                        <td>24/04/2024</td>
-                        <td>
-                          <label class="badge badge-success">Efetuada</label>
-                        </td>
-                        <td>
-                          <div class="d-flex">
-                            <button class="bg-transparent border-0">
-                              <i class="mdi mdi-eye"></i>
-                            </button>
-                            <button class="bg-transparent border-0">
-                              <i class="mdi mdi-delete"></i>
-                            </button>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Bianca Dantas</td>
-                        <td>7° ano</td>
-                        <td>Manhã</td>
-                        <td>Roberto Carlos</td>
-                        <td>(18) 38388-9874</td>
-                        <td>murilodantasengenharia@gmail.com</td>
-                        <td>24/04/2024</td>
-                        <td>
-                          <label class="badge badge-success">Efetuada</label>
-                        </td>
-                        <td>
-                          <div class="d-flex">
-                            <button class="bg-transparent border-0">
-                              <i class="mdi mdi-eye"></i>
-                            </button>
-                            <button class="bg-transparent border-0">
-                              <i class="mdi mdi-delete"></i>
-                            </button>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Ingrid Solavanco</td>
-                        <td>8° ano</td>
-                        <td>Manhã</td>
-                        <td>Maria Elisa Nogueira</td>
-                        <td>(18) 38388-9874</td>
-                        <td>maelibritneyspears@gmail.com</td>
-                        <td>07/04/2024</td>
-                        <td>
-                          <div class="d-flex flex-column">
-                            <label class="badge badge-info mb-1"
-                              >Aguardando laudo médico</label
-                            >
-                            <label class="badge badge-warning"
-                              >Aguardando termo de compromisso</label
-                            >
-                          </div>
-                        </td>
-                        <td>
-                          <div class="d-flex">
-                            <button class="bg-transparent border-0">
-                              <i class="mdi mdi-eye"></i>
-                            </button>
-                            <button class="bg-transparent border-0">
-                              <i class="mdi mdi-delete"></i>
-                            </button>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Diego Solavanco</td>
-                        <td>8° ano</td>
-                        <td>Manhã</td>
-                        <td>Maria Elisa Nogueira</td>
-                        <td>(18) 38388-9874</td>
-                        <td>maelibritneyspears@gmail.com</td>
-                        <td>07/04/2024</td>
-                        <td>
-                          <label class="badge badge-warning"
-                            >Aguardando termo de compromisso</label
-                          >
-                        </td>
-                        <td>
-                          <div class="d-flex">
-                            <button class="bg-transparent border-0">
-                              <i class="mdi mdi-eye"></i>
-                            </button>
-                            <button class="bg-transparent border-0">
-                              <i class="mdi mdi-delete"></i>
-                            </button>
-                          </div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <div class="form-group col-md-3">
+                    <label for="exampleInputEmail3">Data de nascimento</label>
+                    <input type="date" class="form-control" id="exampleInputEmail3" />
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="exampleInputCPF">CPF (opcional)</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputCPF"
+                      placeholder="___.____.___-__"
+                    />
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="exampleInputRG">RG (opcional)</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputRG"
+                      placeholder="___.____.___-__"
+                    />
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="exampleInputNacionality">Nacionalidade</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputNacionality"
+                      placeholder="Ex: Brasileiro"
+                    />
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="exampleSelectGender">Genêro</label>
+                    <select class="form-control" id="exampleSelectGender">
+                      <option>Masculino</option>
+                      <option>Feminino</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="examplestreet">Logradouro</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="examplestreet"
+                      placeholder="Ex: Rua Itamonhangaba"
+                    />
+                  </div>
+                  <div class="form-group col-md-1">
+                    <label for="exampleStreetNumber">Número</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleStreetNumber"
+                      placeholder="Número"
+                    />
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="complement">Complemento</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="complement"
+                      placeholder="Apt 6"
+                    />
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="district">Bairro</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="district"
+                      placeholder="Jardim Joana Darc"
+                    />
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="city">Cidade</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="city"
+                      placeholder="São Paulo"
+                    />
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="state">Estado</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="state"
+                      placeholder="São Paulo"
+                    />
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="CEP">CEP</label>
+                    <input type="text" class="form-control" id="CEP" placeholder="19470-000" />
+                  </div>
                 </div>
-              </div>
+
+                <h5 class="card-title mt-2">Dados do responsável</h5>
+
+                <div class="forms-sample w-100 row">
+                  <div class="form-group col-md-3">
+                    <label for="exampleInputName1">Nome </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputName1"
+                      placeholder="Nome"
+                    />
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="exampleInputEmail3">Data de nascimento</label>
+                    <input type="date" class="form-control" id="exampleInputEmail3" />
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="InputCPF">CPF</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="InputCPF"
+                      placeholder="___.____.___-__"
+                    />
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="InputRG">RG</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="InputRG"
+                      placeholder="___.____.___-__"
+                    />
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="exampleInputNacionality">Nacionalidade</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputNacionality"
+                      placeholder="Ex: Brasileiro"
+                    />
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="exampleSelectGender">Genêro</label>
+                    <select class="form-control" id="exampleSelectGender">
+                      <option>Masculino</option>
+                      <option>Feminino</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="examplestreet">Logradouro</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="examplestreet"
+                      placeholder="Ex: Rua Itamonhangaba"
+                    />
+                  </div>
+                  <div class="form-group col-md-1">
+                    <label for="exampleStreetNumber">Número</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleStreetNumber"
+                      placeholder="Número"
+                    />
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="complement">Complemento</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="complement"
+                      placeholder="Apt 6"
+                    />
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="district">Bairro</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="district"
+                      placeholder="Jardim Joana Darc"
+                    />
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="city">Cidade</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="city"
+                      placeholder="São Paulo"
+                    />
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="state">Estado</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="state"
+                      placeholder="São Paulo"
+                    />
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="CEP">CEP</label>
+                    <input type="text" class="form-control" id="CEP" placeholder="19470-000" />
+                  </div>
+                </div>
+
+                <div class="form-group col-md-4">
+                  <label> Termo de compromisso</label>
+                  <input type="file" name="img[]" class="file-upload-default" />
+                  <div class="input-group col-xs-12">
+                    <input
+                      type="text"
+                      class="form-control file-upload-info"
+                      disabled
+                      placeholder="Enviar termo assinado"
+                    />
+                    <span class="input-group-append">
+                      <button class="file-upload-browse btn btn-primary" type="button">
+                        Upload
+                      </button>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="form-group col-md-12">
+                  <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                  <button class="btn btn-light">Cancel</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
