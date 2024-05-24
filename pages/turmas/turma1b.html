@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Escola Faz de conta</title>
+
+    <link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="../../assets/vendors/flag-icon-css/css/flag-icon.min.css" />
+    <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css" />
+
+    <link rel="stylesheet" href="../../assets/vendors/font-awesome/css/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="../../assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css"
+    />
+
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <link rel="shortcut icon" href="../../assets/images/favicon.png" />
+  </head>
+  <body>
+    <div class="container-scroller">
+      <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+        <div
+          class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center"
+        >
+          <a class="navbar-brand brand-logo" href="../../index.html"
+            ><img src="../../assets/images/logo.svg" alt="logo"
+          /></a>
+          <a class="navbar-brand brand-logo-mini" href="../../index.html"
+            ><img src="../../assets/images/logo-mini.svg" alt="logo"
+          /></a>
+        </div>
+        <div class="navbar-menu-wrapper d-flex align-items-stretch">
+          <button
+            class="navbar-toggler navbar-toggler align-self-center"
+            type="button"
+            data-toggle="minimize"
+          >
+            <span class="mdi mdi-menu"></span>
+          </button>
+
+          <ul class="navbar-nav navbar-nav-right">
+            <li class="nav-item nav-profile dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="profileDropdown"
+                href="#"
+                data-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <div class="nav-profile-img">
+                  <img src="../../assets/images/faces/face28.png" alt="image" />
+                </div>
+                <div class="nav-profile-text">
+                  <p class="mb-1 text-black">Marinalva da Silva</p>
+                </div>
+              </a>
+              <div
+                class="dropdown-menu navbar-dropdown dropdown-menu-right p-0 border-0 font-size-sm"
+                aria-labelledby="profileDropdown"
+                data-x-placement="bottom-end"
+              >
+                <div class="p-3 text-center bg-primary">
+                  <img
+                    class="img-avatar img-avatar48 img-avatar-thumb"
+                    src="../../assets/images/faces/face28.png"
+                    alt=""
+                  />
+                </div>
+                <div class="p-2">
+                  <a
+                    class="dropdown-item py-1 d-flex align-items-center justify-content-between"
+                    href="#"
+                  >
+                    <span>Perfil</span>
+                    <span class="p-0">
+                      <span class="badge badge-success">1</span>
+                      <i class="mdi mdi-account-outline ml-1"></i>
+                    </span>
+                  </a>
+                  <a
+                    class="dropdown-item py-1 d-flex align-items-center justify-content-between"
+                    href="javascript:void(0)"
+                  >
+                    <span>Configurações</span>
+                    <i class="mdi mdi-settings"></i>
+                  </a>
+
+                  <a
+                    class="dropdown-item py-1 d-flex align-items-center justify-content-between"
+                    href="#"
+                  >
+                    <span>Sair</span>
+                    <i class="mdi mdi-logout ml-1"></i>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link count-indicator dropdown-toggle"
+                id="notificationDropdown"
+                href="#"
+                data-toggle="dropdown"
+              >
+                <i class="mdi mdi-bell-outline"></i>
+                <span class="count-symbol bg-danger"></span>
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+                aria-labelledby="notificationDropdown"
+              >
+                <h6 class="p-3 mb-0 bg-primary text-white py-4">Notificações</h6>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-success">
+                      <i class="mdi mdi-calendar"></i>
+                    </div>
+                  </div>
+                  <div
+                    class="preview-item-content d-flex align-items-start flex-column justify-content-center"
+                  >
+                    <h6 class="preview-subject font-weight-normal mb-1">
+                      Conclusão de matricula
+                    </h6>
+                    <p class="text-gray ellipsis mb-0">Sofia da Silva concluiu a matricula</p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-success">
+                      <i class="mdi mdi-calendar"></i>
+                    </div>
+                  </div>
+                  <div
+                    class="preview-item-content d-flex align-items-start flex-column justify-content-center"
+                  >
+                    <h6 class="preview-subject font-weight-normal mb-1">
+                      Conclusão de matricula
+                    </h6>
+                    <p class="text-gray ellipsis mb-0">Leticia Moira concluiu a matricula</p>
+                  </div>
+                </a>
+
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-info">
+                      <i class="mdi mdi-link-variant"></i>
+                    </div>
+                  </div>
+                  <div
+                    class="preview-item-content d-flex align-items-start flex-column justify-content-center"
+                  >
+                    <h6 class="preview-subject font-weight-normal mb-1">
+                      Termo de compromisso assinado
+                    </h6>
+                    <p class="text-gray ellipsis mb-0">
+                      Daiana Morales assinou digitalmente o termo de compromisso
+                    </p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <h6 class="p-3 mb-0 text-center">Ver todas as notificações</h6>
+              </div>
+            </li>
+          </ul>
+          <button
+            class="navbar-toggler navbar-toggler-right d-lg-none align-self-center"
+            type="button"
+            data-toggle="offcanvas"
+          >
+            <span class="mdi mdi-menu"></span>
+          </button>
+        </div>
+      </nav>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:partials/_sidebar.html -->
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html">
+                <span class="icon-bg"><i class="mdi mdi-cube menu-icon"></i></span>
+                <span class="menu-title">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../alunos/alunos.html">
+                <span class="icon-bg"><i class="mdi mdi-account-check"></i></span>
+                <span class="menu-title">Alunos</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./matriculas.html">
+                <span class="icon-bg"
+                  ><i class="mdi mdi-format-list-bulleted menu-icon"></i
+                ></span>
+                <span class="menu-title">Matriculas</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../disciplinas/disciplinas.html">
+                <span class="icon-bg"><i class="mdi mdi-table-large menu-icon"></i></span>
+                <span class="menu-title">Disciplinas</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../turmas/turmas.html">
+                <span class="icon-bg"><i class="mdi mdi-account-multiple-outline"></i></span>
+                <span class="menu-title">Turmas</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-toggle="collapse"
+                href="#auth"
+                aria-expanded="false"
+                aria-controls="auth"
+              >
+                <span class="icon-bg"><i class="mdi mdi-lock menu-icon"></i></span>
+                <span class="menu-title">Despesas</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="auth">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../despesas/contas-a-pagar.html">
+                      Contas a pagar
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../despesas/contas-a-receber.html">
+                      Contas a receber
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="row" id="proBanner">
+              <div class="col-12">
+                <i id="bannerClose"></i>
+              </div>
+            </div>
+            <div class="d-xl-flex justify-content-between align-items-start">
+              <h2 class="text-dark font-weight-bold mb-2">Matrículas</h2>
+              <div class="d-sm-flex justify-content-xl-between align-items-center mb-2">
+                <div class="btn-group bg-white p-3" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-link text-light py-0 border-right">
+                    7 Dias
+                  </button>
+                  <button type="button" class="btn btn-link text-dark py-0 border-right">
+                    1 Mês
+                  </button>
+                  <button type="button" class="btn btn-link text-light py-0">3 Meses</button>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="card w-100">
+                <div class="card-body">
+                  <h4 class="card-title">Lista de matriculas</h4>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Nome</th>
+                        <th>Série/ano</th>
+                        <th>Turno</th>
+                        <th>Nome do responsável</th>
+                        <th>Telefone</th>
+                        <th>Responsável</th>
+                        <th>Data</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Luísa Rodrigues</td>
+                            <td>1º ano B</td>
+                            <td>Manhã</td>
+                            <td>Terezinha Campinal</td>
+                            <td>(18) 9494-9393</td>
+                            <td>terezainha@gmail.com</td>
+                            <td>01/05/2024</td>
+                        </tr>                        
+                        <tr>
+                            <td>Felipe Santos</td>
+                            <td>1º ano B</td>
+                            <td>Manhã</td>
+                            <td>Rodrigo Oliveira</td>
+                            <td>(18) 8787-7878</td>
+                            <td>rodrigao@gmail.com</td>
+                            <td>02/05/2024</td>
+                        </tr>                     
+                        <tr>
+                            <td>Carlos Silva</td>
+                            <td>1º ano B</td>
+                            <td>Manhã</td>
+                            <td>Mariana Silva</td>
+                            <td>(21) 9123-4567</td>
+                            <td>mariana.silva@email.com</td>
+                            <td>03/05/2024</td>
+                        </tr>                 
+                        <tr>
+                            <td>Ana Oliveira</td>
+                            <td>1º ano B</td>
+                            <td>Manhã</td>
+                            <td>João Oliveira</td>
+                            <td>(31) 9876-5432</td>
+                            <td>joao.oliveira@email.com</td>
+                            <td>04/05/2024</td>
+                        </tr>
+                        <tr>
+                            <td>Maria Santos</td>
+                            <td>1º ano B</td>
+                            <td>Manhã</td>
+                            <td>Carlos Santos</td>
+                            <td>(11) 9234-5678</td>
+                            <td>carlos.santos@email.com</td>
+                            <td>05/05/2024</td>
+                        </tr>
+                        <tr>
+                            <td>Gabriel Lima</td>
+                            <td>1º ano B</td>
+                            <td>Manhã</td>
+                            <td>Juliana Lima</td>
+                            <td>(19) 9345-6789</td>
+                            <td>juliana.lima@email.com</td>
+                            <td>06/05/2024</td>
+                        </tr>
+                        <tr>
+                            <td>Ana Silva</td>
+                            <td>1º ano B</td>
+                            <td>Manhã</td>
+                            <td>Carlos Silva</td>
+                            <td>(21) 9456-7890</td>
+                            <td>carlos.silva@email.com</td>
+                            <td>07/05/2024</td>
+                        </tr>
+                        <tr>
+                            <td>Rafaela Oliveira</td>
+                            <td>1º ano B</td>
+                            <td>Manhã</td>
+                            <td>Paulo Oliveira</td>
+                            <td>(31) 8765-4321</td>
+                            <td>paulo.oliveira@email.com</td>
+                            <td>08/05/2024</td>
+                        </tr>
+                        <tr>
+                            <td>João Pereira</td>
+                            <td>1º ano B</td>
+                            <td>Manhã</td>
+                            <td>Maria Pereira</td>
+                            <td>(11) 8901-2345</td>
+                            <td>maria.pereira@email.com</td>
+                            <td>09/05/2024</td>
+                        </tr>
+                        <tr>
+                            <td>Juliana Lima</td>
+                            <td>1º ano B</td>
+                            <td>Manhã</td>
+                            <td>Carlos Lima</td>
+                            <td>(19) 9012-3456</td>
+                            <td>carlos.lima@email.com</td>
+                            <td>10/05/2024</td>
+                        </tr>
+                        <tr>
+                            <td>Marcos Oliveira</td>
+                            <td>1º ano B</td>
+                            <td>Manhã</td>
+                            <td>Patrícia Oliveira</td>
+                            <td>(21) 9876-5432</td>
+                            <td>patricia.oliveira@email.com</td>
+                            <td>11/05/2024</td>
+                        </tr>
+                        <tr>
+                            <td>Camila Santos</td>
+                            <td>1º ano B</td>
+                            <td>Manhã</td>
+                            <td>André Santos</td>
+                            <td>(31) 9012-3456</td>
+                            <td>andre.santos@email.com</td>
+                            <td>12/05/2024</td>
+                        </tr>
+                        <tr>
+                            <td>Lucas Silva</td>
+                            <td>1º ano B</td>
+                            <td>Manhã</td>
+                            <td>Patrícia Silva</td>
+                            <td>(11) 8765-4321</td>
+                            <td>patricia.silva@email.com</td>
+                            <td>13/05/2024</td>
+                        </tr>
+                        <td>Ana Oliveira</td>
+                        <td>1º ano B</td>
+                        <td>Manhã</td>
+                        <td>João Oliveira</td>
+                        <td>(31) 9876-5432</td>
+                        <td>joao.oliveira@email.com</td>
+                        <td>14/05/2024</td>
+                    </tr>
+                    <tr>
+                        <td>Roberto Lima</td>
+                        <td>1º ano B</td>
+                        <td>Manhã</td>
+                        <td>Fernanda Lima</td>
+                        <td>(19) 9012-3456</td>
+                        <td>fernanda.lima@email.com</td>
+                        <td>15/05/2024</td>
+                    </tr>
+                    <tr>
+                        <td>Carla Santos</td>
+                        <td>1º ano B</td>
+                        <td>Manhã</td>
+                        <td>Paulo Santos</td>
+                        <td>(21) 9876-5432</td>
+                        <td>paulo.santos@email.com</td>
+                        <td>16/05/2024</td>
+                    </tr>
+                    <tr>
+                        <td>Marcos Oliveira</td>
+                        <td>1º ano B</td>
+                        <td>Manhã</td>
+                        <td>Maria Oliveira</td>
+                        <td>(31) 9012-3456</td>
+                        <td>maria.oliveira@email.com</td>
+                        <td>17/05/2024</td>
+                    </tr>
+                    <tr>
+                        <td>Camila Silva</td>
+                        <td>1º ano B</td>
+                        <td>Manhã</td>
+                        <td>Carlos Silva</td>
+                        <td>(11) 8765-4321</td>
+                        <td>carlos.silva@email.com</td>
+                        <td>18/05/2024</td>
+                    </tr>
+                    <tr>
+                        <td>Marcos Santos</td>
+                        <td>1º ano B</td>
+                        <td>Manhã</td>
+                        <td>Mariana Santos</td>
+                        <td>(19) 9345-6789</td>
+                        <td>mariana.santos@email.com</td>
+                        <td>19/05/2024</td>
+                    </tr>
+                    <tr>
+                        <td>Ana Lima</td>
+                        <td>1º ano B</td>
+                        <td>Manhã</td>
+                        <td>João Lima</td>
+                        <td>(21) 9456-7890</td>
+                        <td>joao.lima@email.com</td>
+                        <td>20/05/2024</td>
+                    </tr>
+                    <tr>
+                        <td>Rafaela Santos</td>
+                        <td>1º ano B</td>
+                        <td>Manhã</td>
+                        <td>Paulo Santos</td>
+                        <td>(11) 8765-4321</td>
+                        <td>paulo.santos@email.com</td>
+                        <td>21/05/2024</td>
+                    </tr>
+                    <tr>
+                        <td>Lucas Oliveira</td>
+                        <td>1º ano B</td>
+                        <td>Manhã</td>
+                        <td>Maria Oliveira</td>
+                        <td>(19) 9012-3456</td>
+                        <td>maria.oliveira@email.com</td>
+                        <td>22/05/2024</td>
+                    </tr>
+                    <tr>
+                        <td>Carla Silva</td>
+                        <td>1º ano B</td>
+                        <td>Manhã</td>
+                        <td>Carlos Silva</td>
+                        <td>(21) 9876-5432</td>
+                        <td>carlos.silva@email.com</td>
+                        <td>23/05/2024</td>
+                    </tr>
+                    <tr>
+                        <td>João Oliveira</td>
+                        <td>1º ano B</td>
+                        <td>Manhã</td>
+                        <td>Maria Oliveira</td>
+                        <td>(31) 8765-4321</td>
+                        <td>maria.oliveira@email.com</td>
+                        <td>24/05/2024</td>
+                    </tr>
+                    <tr>
+                        <td>Paulo Santos</td>
+                        <td>1º ano B</td>
+                        <td>Manhã</td>
+                        <td>Paula Santos</td>
+                        <td>(11) 9012-3456</td>
+                        <td>paula.santos@email.com</td>
+                        <td>25/05/2024</td>
+                    </tr>
+                    <tr>
+                        <td>Marcos Silva</td>
+                        <td>1º ano B</td>
+                        <td>Manhã</td>
+                        <td>Mariana Silva</td>
+                        <td>(19) 9345-6789</td>
+                        <td>mariana.silva@email.com</td>
+                        <td>26/05/2024</td>
+                    </tr>
+                    <tr>
+                        <td>Ana Lima</td>
+                        <td>1º ano B</td>
+                        <td>Manhã</td>
+                        <td>João Lima</td>
+                        <td>(21) 9456-7890</td>
+                        <td>joao.lima@email.com</td>
+                        <td>27/05/2024</td>
+                    </tr>
+                    <tr>
+                        <td>Paulo Santos</td>
+                        <td>1º ano B</td>
+                        <td>Manhã</td>
+                        <td>Patrícia Santos</td>
+                        <td>(31) 9012-3456</td>
+                        <td>patricia.santos@email.com</td>
+                        <td>28/05/2024</td>
+                    </tr>
+                    <tr>
+                        <td>Lucas Oliveira</td>
+                        <td>1º ano B</td>
+                        <td>Manhã</td>
+                        <td>Maria Oliveira</td>
+                        <td>(11) 8765-4321</td>
+                        <td>maria.oliveira@email.com</td>
+                        <td>29/05/2024</td>
+                    </tr>
+                    <tr>
+                        <td>Carla Silva</td>
+                        <td>1º ano B</td>
+                        <td>Manhã</td>
+                        <td>Carlos Silva</td>
+                        <td>(19) 9345-6789</td>
+                        <td>carlos.silva@email.com</td>
+                        <td>30/05/2024</td>
+                    </tr>
+                    
+                    
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../../assets/vendors/js/vendor.bundle.base.js"></script>
+
+    <script src="../../assets/vendors/chart.js/Chart.min.js"></script>
+    <script src="../../assets/vendors/jquery-circle-progress/js/circle-progress.min.js"></script>
+
+    <script src="../../assets/js/off-canvas.js"></script>
+    <script src="../../assets/js/hoverable-collapse.js"></script>
+    <script src="../../assets/js/misc.js"></script>
+
+    <script src="../../assets/js/dashboard.js"></script>
+  </body>
+</html>
