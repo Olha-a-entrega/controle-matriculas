@@ -246,123 +246,7 @@
                 <i id="bannerClose"></i>
               </div>
             </div>
-            <div class="d-xl-flex justify-content-between align-items-start">
-              <h2 class="text-dark font-weight-bold mb-2">Visão geral</h2>
-              <div class="d-sm-flex justify-content-xl-between align-items-center mb-2">
-                <div class="btn-group bg-white p-3" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-link text-light py-0 border-right">
-                    7 Dias
-                  </button>
-                  <button type="button" class="btn btn-link text-dark py-0 border-right">
-                    1 Mês
-                  </button>
-                  <button type="button" class="btn btn-link text-light py-0">3 Meses</button>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                <div
-                  class="d-sm-flex justify-content-between align-items-center transaparent-tab-border"
-                >
-                  <ul class="nav nav-tabs tab-transparent" role="tablist">
-                    <li class="nav-item">
-                      <a
-                        class="nav-link active"
-                        id="business-tab"
-                        data-toggle="tab"
-                        href="#business-1"
-                        role="tab"
-                        aria-selected="false"
-                        >Negócios</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-                <div class="tab-content tab-transparent-content">
-                  <div
-                    class="tab-pane fade show active"
-                    id="business-1"
-                    role="tabpanel"
-                    aria-labelledby="business-tab"
-                  >
-                    <div class="row">
-                      <div class="col-xl-3 col-lg-6 col-sm-6 grid-margin stretch-card">
-                        <div class="card">
-                          <div class="card-body text-center">
-                            <h5 class="mb-2 text-dark font-weight-normal">Rematrículas</h5>
-                            <h2 class="mb-4 text-dark font-weight-bold">790</h2>
-                            <div
-                              class="dashboard-progress dashboard-progress-1 d-flex align-items-center justify-content-center item-parent"
-                            >
-                              <i
-                                class="mdi mdi-lightbulb icon-md absolute-center text-dark"
-                              ></i>
-                            </div>
-                            <p class="mt-4 mb-0">Total</p>
-                            <h3 class="mb-0 font-weight-bold mt-2 text-dark">1368</h3>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xl-3 col-lg-6 col-sm-6 grid-margin stretch-card">
-                        <div class="card">
-                          <div class="card-body text-center">
-                            <h5 class="mb-2 text-dark font-weight-normal">Novos alunos</h5>
-                            <h2 class="mb-4 text-dark font-weight-bold">156</h2>
-                            <div
-                              class="dashboard-progress dashboard-progress-2 d-flex align-items-center justify-content-center item-parent"
-                            >
-                              <i
-                                class="mdi mdi-account-circle icon-md absolute-center text-dark"
-                              ></i>
-                            </div>
-                            <p class="mt-4 mb-0">Matrículas na última semana</p>
-                            <h3 class="mb-0 font-weight-bold mt-2 text-dark">68</h3>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xl-3 col-lg-6 col-sm-6 grid-margin stretch-card">
-                        <div class="card">
-                          <div class="card-body text-center">
-                            <h5 class="mb-2 text-dark font-weight-normal">
-                              Aguardando termo de compromisso
-                            </h5>
-                            <h2 class="mb-4 text-dark font-weight-bold">38</h2>
-                            <div
-                              class="dashboard-progress dashboard-progress-3 d-flex align-items-center justify-content-center item-parent"
-                            >
-                              <i class="mdi mdi-eye icon-md absolute-center text-dark"></i>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xl-3 col-lg-6 col-sm-6 grid-margin stretch-card">
-                        <div class="card">
-                          <div class="card-body text-center">
-                            <h5 class="mb-2 text-dark font-weight-normal">Desistências</h5>
-                            <h2 class="mb-4 text-dark font-weight-bold">42</h2>
-                            <div
-                              class="dashboard-progress dashboard-progress-4 d-flex align-items-center justify-content-center item-parent"
-                            >
-                              <i class="mdi mdi-cube icon-md absolute-center text-dark"></i>
-                            </div>
-                            <p class="mt-4 mb-0">Desistências na última semana</p>
-                            <h3 class="mb-0 font-weight-bold mt-2 text-dark">15</h3>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="content-wrapper">
-            <div class="row" id="proBanner">
-              <div class="col-12">
-                <i id="bannerClose"></i>
-              </div>
-            </div>
+
             <div class="d-xl-flex justify-content-between align-items-start">
               <h2 class="text-dark font-weight-bold mb-2">Gerenciar Aluno</h2>
               <div class="d-sm-flex justify-content-xl-between align-items-center mb-2">
@@ -388,6 +272,7 @@
                     <tr>
                       <th>Aluno</th>
                       <th>Nome Completo</th>
+                      <th>Série/Ano</th>
                       <th>Data de matrícula</th>
                       
                     </tr>
@@ -401,7 +286,8 @@
                         />
                       </td>
                       <td>João Pedro Souza Santos	</td>
-                      <td>2024-02-01</td>
+                      <td>2º ano A</td>
+                      <td>01/02/2023</td>
                       <td><a href="../alunos/editar.html" class="text-dark"><i class="mdi mdi-border-color" title="Editar"></i></a></td>
                       <td><a href="../alunos/visualizar.html" class="text-dark"><i class="mdi mdi-magnify" title="Visualizar informações"></i></a></td>
                       <td><a href="../alunos/historico.html" class="text-dark"><i class="mdi mdi-folder-account" title="Ver histórico do aluno"></i></a></td>
@@ -418,7 +304,8 @@
                         />
                       </td>
                       <td>Ana Luiza Silva Oliveira</td>
-                      <td>2023-03-15</td>
+                      <td>2º ano C</td>
+                      <td>15/03/2023</td>
                       <td><a href="../alunos/editar.html" class="text-dark"><i class="mdi mdi-border-color" title="Editar"></i></a></td>
                       <td><a href="../alunos/visualizar.html" class="text-dark"><i class="mdi mdi-magnify" title="Visualizar informações"></i></a></td>
                       <td><a href="../alunos/historico.html" class="text-dark"><i class="mdi mdi-folder-account" title="Ver histórico do aluno"></i></a></td>
@@ -434,7 +321,8 @@
                         />
                       </td>
                       <td>Beatriz Mendes Costa</td>
-                      <td>2022-08-10</td>
+                      <td>3º ano A</td>
+                      <td>10/08/2022</td>
                       <td><a href="../alunos/editar.html" class="text-dark"><i class="mdi mdi-border-color" title="Editar"></i></a></td>
                       <td><a href="../alunos/visualizar.html" class="text-dark"><i class="mdi mdi-magnify" title="Visualizar informações"></i></a></td>
                       <td><a href="../alunos/historico.html" class="text-dark"><i class="mdi mdi-folder-account" title="Ver histórico do aluno"></i></a></td>
@@ -450,7 +338,8 @@
                         />
                       </td>
                       <td>Guilherme Pereira Dias</td>
-                      <td>2023-05-22</td>
+                      <td>3º ano A</td>
+                      <td>22/05/2023</td>
                       <td><a href="../alunos/editar.html" class="text-dark"><i class="mdi mdi-border-color" title="Editar"></i></a></td>
                       <td><a href="../alunos/visualizar.html" class="text-dark"><i class="mdi mdi-magnify" title="Visualizar informações"></i></a></td>
                       <td><a href="../alunos/historico.html" class="text-dark"><i class="mdi mdi-folder-account" title="Ver histórico do aluno"></i></a></td>
@@ -466,7 +355,8 @@
                         />
                       </td>
                       <td>Davi Ferreira Lima	</td>
-                      <td>2022-07-05</td>
+                      <td>2º ano C</td>
+                      <td>05/07/2022</td>
                       <td><a href="../alunos/editar.html" class="text-dark"><i class="mdi mdi-border-color" title="Editar"></i></a></td>
                       <td><a href="../alunos/visualizar.html" class="text-dark"><i class="mdi mdi-magnify" title="Visualizar informações"></i></a></td>
                       <td><a href="../alunos/historico.html" class="text-dark"><i class="mdi mdi-folder-account" title="Ver histórico do aluno"></i></a></td>
@@ -482,7 +372,8 @@
                         />
                       </td>
                       <td>Laura Martins Rodrigues	</td>
-                      <td>2023-04-04</td>
+                      <td>3º ano B</td>
+                      <td>04/04/2023</td>
                       <td><a href="../alunos/editar.html" class="text-dark"><i class="mdi mdi-border-color" title="Editar"></i></a></td>
                       <td><a href="../alunos/visualizar.html" class="text-dark"><i class="mdi mdi-magnify" title="Visualizar informações"></i></a></td>
                       <td><a href="../alunos/historico.html" class="text-dark"><i class="mdi mdi-folder-account" title="Ver histórico do aluno"></i></a></td>
@@ -498,7 +389,8 @@
                         />
                       </td>
                       <td>Isabella Rocha Cardoso	</td>
-                      <td>2023-06-07 </td>
+                      <td>2º ano B</td>
+                      <td>07/06/2023</td>
                       <td><a href="../alunos/editar.html" class="text-dark"><i class="mdi mdi-border-color" title="Editar"></i></a></td>
                       <td><a href="../alunos/visualizar.html" class="text-dark"><i class="mdi mdi-magnify" title="Visualizar informações"></i></a></td>
                       <td><a href="../alunos/historico.html" class="text-dark"><i class="mdi mdi-folder-account" title="Ver histórico do aluno"></i></a></td>
