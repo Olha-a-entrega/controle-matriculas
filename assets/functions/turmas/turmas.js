@@ -5,22 +5,22 @@ export const sidebarItems = [
     menuTitle: "Dashboard",
   },
   {
-    href: "pages/alunos/alunos.html",
+    href:"../alunos/alunos.html",
     iconClass: "mdi mdi-account-check",
     menuTitle: "Alunos",
   },
   {
-    href: "pages/matriculas/matriculas.html",
+    href: "../matriculas/matriculas.html",
     iconClass: "mdi mdi-format-list-bulleted menu-icon",
     menuTitle: "Matriculas",
   },
   {
-    href: "pages/disciplinas/disciplinas.html",
+    href: "../disciplinas/disciplinas.html",
     iconClass: "mdi mdi-table-large menu-icon",
     menuTitle: "Disciplinas",
   },
   {
-    href: "pages/turmas/turmas.html",
+    href: "../turmas/turmas.html",
     iconClass: "mdi mdi-account-multiple-outline",
     menuTitle: "Turmas",
   },
@@ -30,11 +30,11 @@ export const sidebarItems = [
     menuTitle: "Despesas",
     subItems: [
       {
-        href: "pages/despesas/contas-a-pagar.html",
+        href: "../despesas/contas-a-pagar.html",
         menuTitle: "Contas a pagar",
       },
       {
-        href: "pages/despesas/contas-a-receber.html",
+        href: "../despesas/contas-a-receber.html",
         menuTitle: "Contas a receber",
       },
     ],
