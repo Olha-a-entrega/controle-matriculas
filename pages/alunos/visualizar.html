@@ -241,144 +241,103 @@
                 </div>
                 </li>
             </ul>
-        </nav>
-            
-    <!--parte do "Cabeçalho"-->
-    
-    <!--basic table-->
-    <div class="main-panel">
-        <div class="content-wrapper">
-            <div class="row" id="proBanner">
+            </nav>
+            <div class="main-panel">
+            <div class="content-wrapper">
+                <div class="row" id="proBanner">
                 <div class="col-12">
                     <i id="bannerClose"></i>
                 </div>
                 </div>
                 <!--parte do "Cabeçalho"-->
                 <div class="d-xl-flex justify-content-between align-items-start">
-                <h2 class="text-dark font-weight-bold mb-2">Despesas</h2>
+                <h2 class="text-dark font-weight-bold mb-2">Informações do aluno</h2>
                 <div class="d-sm-flex justify-content-xl-between align-items-center mb-2">
                     <div class="btn-group bg-white p-3" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-link text-dark py-0 border-right">
-                            <a class="text-dark" href="../despesas/contas-a-pagar.html">Listar</a>
-                        </button>
-                        <button type="button" class="btn btn-link text-light py-0 border-right">
-                            <a class="text-light" href="../despesas/adicionar.html">Adicionar</a>
-                        </button>
-                        <button type="button" class="btn btn-link text-light py-0 border-right">
-                            <a class="text-light" href="../despesas/filtrar.html">Filtrar</a>
-                        </button>
-                        <button type="button" class="btn btn-link text-light py-0 border-right"> 
-                            <a  class="text-light" href="../despesas/relatorio.html">Gerar relatório</a>
-                        </button>
+                    <button type="button" class="btn btn-link text-dark py-0 border-right">
+                        <a class="text-dark" href="../alunos/alunos.html"> Listar alunos matriculados</a></button>
+                    <button type="button" class="btn btn-link text-light py-0 border-right">
+                        <a class="text-light" href="../alunos/relatorio.html">Gerar Relatório</a></button>
                     </div>
                 </div>
-            </div>
-        <!--basic table-->
-        <div class="row">
-            <div class="col-lg-12 grid-margin stretch-card">
-                <div class="card">
-                <div class="card-body">
-                    <h4 class="card-title">Contas a pagar</h4>
-                    <table class="table">
-                        <thead>
-                        <tr>
-                            <th>Conta</th>
-                            <th>Valor</th>
-                            <th>Data de vencimento</th>
-                            <th>Status</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>Salário</td>
-                            <td>R$ 5.000,00</td>
-                            <td>01/06/2024</td>
-                            <td><label class="badge badge-danger">Pendente</label></td>
-                        </tr>
-                        <tr>
-                            <td>Salário</td>
-                            <td>R$ 5.000,00</td>
-                            <td>10/06/2024</td>
-                            <td><label class="badge badge-danger">Pendente</label></td>
-                        </tr>
-                        <tr>
-                            <td>Imposto</td>
-                            <td>R$ 3.000,00</td>
-                            <td>25/03/2024</td>
-                            <td><label class="badge badge-danger">Pendente</label></td>
-                        </tr>
-                        <tr>
-                            <td>Cheque</td>
-                            <td>R$ 2.500,00</td>
-                            <td>15/06/2024</td>
-                            <td><label class="badge badge-success">Concluído</label></td>
-                        </tr>
-                        <tr>
-                            <td>Imposto</td>
-                            <td>R$ 3.200,00</td>
-                            <td>20/06/2024</td>
-                            <td><label class="badge badge-warning">Em progresso</label></td>
-                        </tr>
-                        <tr>
-                            <td>Prestação de Serviços</td>
-                            <td>R$ 1.000,00</td>
-                            <td>10/06/2024</td>
-                            <td><label class="badge badge-warning">Em progresso</label></td>
-                        </tr>
-                        <tr>
-                            <td>Prestação de Serviços</td>
-                            <td>R$ 2.000,00</td>
-                            <td>17/06/2024</td>
-                            <td><label class="badge badge-warning">Em progresso</label></td>
-                        </tr>
-                        <tr>
-                            <td>Imposto</td>
-                            <td>R$ 3.200,00</td>
-                            <td>20/05/2024</td>
-                            <td><label class="badge badge-success">Concluído</label></td>
-                        </tr>
-                        <tr>
-                            <td>Imposto</td>
-                            <td>R$ 750,00</td>
-                            <td>21/05/2024</td>
-                            <td><label class="badge badge-success">Concluído</label></td>
-                        </tr>
-                        <tr>
-                            <td>Imposto</td>
-                            <td>R$ 800,00</td>
-                            <td>21/05/2024</td>
-                            <td><label class="badge badge-success">Concluído</label></td>
-                        </tr>
-                        </tbody>
-                    </table>
                 </div>
+
+    <!--Informações do aluno-->
+
+    <div class="card mb-3" style="max-width: max-width">
+        <div class="row g-0">
+        <div class="col-md-2">
+            <img src="/assets/images/faces-clipart/perfil-de-usuario.png" class="img-fluid rounded-start mt-5 ml-4" alt="foto-aluno">
+        </div>
+        <div class="col-md">
+            <div class="card-body">
+            <p class="card-text">
+                <div class="col-lg-12 grid-margin stretch-card d-flex flex-row">
+                    <div class="card flex-grow-1">
+                            <h4 class="card-title">Informações do aluno</h4>
+                            <p class="card-description">Documentação da matrícula do aluno</p>
+                            <div>
+                                <dl class="row text-black">
+                                    <dt class="col-sm-3">Nome Completo</dt>
+                                    <dd class="col-sm-9">João Pedro Souza Santos</dd>
+                                
+                                    <dt class="col-sm-3">Data de nascimento</dt>
+                                    <dd class="col-sm-9"> 01/02/2014 </dd>
+            
+                                    <dt class="col-sm-3">Gênero</dt>
+                                    <dd class="col-sm-9">Masculino</dd>
+            
+                                    <dt class="col-sm-3">CPF</dt>
+                                    <dd class="col-sm-9">123.456.789-00</dd>
+            
+                                    <dt class="col-sm-3">RG</dt>
+                                    <dd class="col-sm-9">12 345 678-9</dd>
+            
+                                    <dt class="col-sm-3">Nacionalidade</dt>
+                                    <dd class="col-sm-9">Brasileira</dd>
+            
+                                    <dt class="col-sm-3">Naturalidade</dt>
+                                    <dd class="col-sm-9">São Paulo-Brasil</dd>
+            
+                                    <dt class="col-sm-3">Endereço</dt>
+                                    <dd class="col-sm-9">
+                                        <p>19050-920</p>
+                                        <p> Pres. Prudente - SP</p>
+                                        <p>R. José Bongiovani, 700 - Cidade Universitária</p>
+                                    </dd>
+            
+                                    <dt class="col-sm-3">Telefone do Responsável</dt>
+                                    <dd class="col-sm-9">(12) 34567 8912</dd>
+            
+                                    <dt class="col-sm-3">Email do Responsável</dt>
+                                    <dd class="col-sm-9">responsavel@gmail.com</dd>
+            
+                                    <dt class="col-sm-3">Telefone de Emergência</dt>
+                                    <dd class="col-sm-9">(12) 34567 8912</dd>
+
+                                    <dt class="col-sm-3">RA</dt>
+                                    <dd class="col-sm-9">1234567899</dd>
+                                    
+                                    <dt class="col-sm-3">Turma</dt>
+                                    <dd class="col-sm-9">2º ano, Turma A</dd>
+            
+                                </dl>
+            
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                    <button class="btn btn-primary" type="button">
+                                        <a class="text-white" href="../alunos/alunos.html">Voltar para a listagem de alunos</a>
+                                    </button>
+                                </div>
+            
+                            </div>
+                    </div>
                 </div>
-            </div>
+            </p>
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
             </div>
         </div>
-        <!-- content-wrapper ends -->
-        <!-- partial:../../partials/_footer.html -->
-        <footer class="footer">
-            <div class="footer-inner-wraper">
-            <div class="d-sm-flex justify-content-center justify-content-sm-between">
-                <span class="text-muted d-block text-center text-sm-left d-sm-inline-block"
-                >Copyright © bootstrapdash.com 2020</span
-                >
-                <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">
-                Free
-                <a href="https://www.bootstrapdash.com/" target="_blank"
-                    >Bootstrap dashboard templates</a
-                >
-                from Bootstrapdash.com</span
-                >
-            </div>
-            </div>
-        </footer>
-        <!-- partial -->
         </div>
-
-    <!--end basic table-->
-
+    </div>
 
     <!--Parte do Script-->
     <script src="../../assets/vendors/js/vendor.bundle.base.js"></script>
