@@ -1,4 +1,5 @@
-import { scales } from "../../constants/disciplinas/escalas.js";
+import { scales, sidebarItems } from "../../functions/disciplinas/escalas.js";
+import { createSidebar } from "../../js/sidebar/sidebar.js";
 
 const urlParams = new URLSearchParams(window.location.search);
 const discipline = urlParams.get("disciplina");
@@ -83,4 +84,5 @@ window.onload = () => {
   createTable();
   setDisciplineName();
   setTeacherName();
+  createSidebar(sidebarItems);
 };
