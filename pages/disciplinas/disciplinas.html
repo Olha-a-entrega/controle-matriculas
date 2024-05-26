@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Escola Faz de conta</title>
+    <title>Escola Connect Plus</title>
 
     <link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css" />
     <link rel="stylesheet" href="../../assets/vendors/flag-icon-css/css/flag-icon.min.css" />
@@ -215,16 +215,20 @@
                         <td>Biologia</td>
                         <td>Ciências Biológicas</td>
                         <td>Tarde</td>
-                        <td><label class="badge badge-danger">Não atríbuida</label></td>
-                        <td>Sem atribuição</td>
+                        <td>
+                          <label id="biologyStatusLabel" class="badge badge-danger"
+                            >Não atríbuida</label
+                          >
+                        </td>
+                        <td id="biologyTeacherName">Sem atribuição</td>
 
                         <td>
                           <div class="d-flex">
-                            <select class="form-control" id="exampleSelectattribute1">
-                              <option>Atribuir disciplina a</option>
-                              <option>Débora Sambrini</option>
-                              <option>Denise Custódio</option>
-                              <option>Mirosmar das Dores</option>
+                            <select class="form-control" id="biology">
+                              <option value="">Atribuir disciplina a</option>
+                              <option value="Débora Sambrini">Débora Sambrini</option>
+                              <option value="Denise Custódio">Denise Custódio</option>
+                              <option value="Mirosmar das Dores">Mirosmar das Dores</option>
                             </select>
                           </div>
                         </td>
@@ -234,17 +238,17 @@
                         <td>Matemática</td>
                         <td>Ciências Exatas</td>
                         <td>Tarde</td>
-                        <td><label class="badge badge-danger">Não atríbuida</label></td>
-                        <td>Sem atribuição</td>
+                        <td><label class="badge badge-success">Atribuída</label></td>
+                        <td>Mariah Deborah</td>
 
                         <td>
                           <div class="d-flex">
-                            <select class="form-control" id="exampleSelectattribute7">
-                              <option>Atribuir disciplina a</option>
-                              <option>Lindinalva do Rego</option>
-                              <option>Meredith Kiko Chaves</option>
-                              <option>Um Dois Três de Oliveira</option>
-                            </select>
+                            <a
+                              href="./escalas.html?disciplina=matematica&professor=Mariah Deborah"
+                              class="bg-transparent border-0"
+                            >
+                              <i class="mdi mdi-eye"></i>
+                            </a>
                           </div>
                         </td>
                       </tr>
@@ -311,17 +315,19 @@
                         <td>Ciências da natureza</td>
                         <td>Manhã</td>
                         <td>
-                          <label class="badge badge-danger">Não atribuída</label>
+                          <label id="englishStatusLabel" class="badge badge-danger"
+                            >Não atribuída</label
+                          >
                         </td>
-                        <td>Sem atribuição</td>
+                        <td id="teacherName">Sem atribuição</td>
 
                         <td>
                           <div class="d-flex">
-                            <select class="form-control" id="exampleSelectattribute5">
-                              <option>Atribuir disciplina a</option>
-                              <option>Marcela Tavares</option>
-                              <option>Diógenes Macedo</option>
-                              <option>Clarice da Silva</option>
+                            <select class="form-control" id="english">
+                              <option value="">Atribuir disciplina a</option>
+                              <option value="Marcela Tavares">Marcela Tavares</option>
+                              <option value="Diógenes Macedo">Diógenes Macedo</option>
+                              <option value="Clarice da Silva">Clarice da Silva</option>
                             </select>
                           </div>
                         </td>

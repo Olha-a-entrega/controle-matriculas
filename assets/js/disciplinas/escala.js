@@ -10,6 +10,7 @@ function data(key) {
     portugues: scales[key],
     historia: scales[key],
     geografia: scales[key],
+    matematica: scales[key],
   };
 
   return currentData[key];

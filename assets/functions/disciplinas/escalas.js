@@ -52,6 +52,7 @@ export const scales = {
   portugues: randomTimes("Tarde", afternoonTimes),
   historia: randomTimes("Manhã", morningTimes),
   geografia: randomTimes("Manhã", morningTimes),
+  matematica: randomTimes("Tarde", afternoonTimes),
 };
 
 export const sidebarItems = [
