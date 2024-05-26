@@ -182,72 +182,9 @@
       <!-- partial -->
       <div class="container-fluid page-body-wrapper">
         <!-- partial:partials/_sidebar.html -->
-        <nav class="sidebar sidebar-offcanvas" id="sidebar">
-          <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link" href="../../index.html">
-                <span class="icon-bg"><i class="mdi mdi-cube menu-icon"></i></span>
-                <span class="menu-title">Dashboard</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../alunos/alunos.html">
-                <span class="icon-bg"><i class="mdi mdi-account-check"></i></span>
-                <span class="menu-title">Alunos</span>
-              </a>
-            </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="./matriculas.html">
-                <span class="icon-bg"
-                  ><i class="mdi mdi-format-list-bulleted menu-icon"></i
-                ></span>
-                <span class="menu-title">Matriculas</span>
-              </a>
-            </li>
+        <div class="sidebar"></div>
 
-            <li class="nav-item">
-              <a class="nav-link" href="../disciplinas/disciplinas.html">
-                <span class="icon-bg"><i class="mdi mdi-table-large menu-icon"></i></span>
-                <span class="menu-title">Disciplinas</span>
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="../turmas/turmas.html">
-                <span class="icon-bg"><i class="mdi mdi-account-multiple-outline"></i></span>
-                <span class="menu-title">Turmas</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                data-toggle="collapse"
-                href="#auth"
-                aria-expanded="false"
-                aria-controls="auth"
-              >
-                <span class="icon-bg"><i class="mdi mdi-lock menu-icon"></i></span>
-                <span class="menu-title">Despesas</span>
-                <i class="menu-arrow"></i>
-              </a>
-              <div class="collapse" id="auth">
-                <ul class="nav flex-column sub-menu">
-                  <li class="nav-item">
-                    <a class="nav-link" href="../despesas/contas-a-pagar.html">
-                      Contas a pagar
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../despesas/contas-a-receber.html">
-                      Contas a receber
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </nav>
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="row" id="proBanner">
@@ -263,72 +200,71 @@
                 <h4 class="card-title">Dados do aluno</h4>
                 <div class="forms-sample w-100 row">
                   <div class="form-group col-md-3">
-                    <label for="exampleInputName1">Nome </label>
+                    <label for="studentName">Nome </label>
                     <input
                       type="text"
                       class="form-control"
-                      id="exampleInputName1"
+                      id="studentName"
                       placeholder="Nome"
                     />
+
+                    <span class="text-danger small" id="errorMessageStudentName"></span>
                   </div>
                   <div class="form-group col-md-3">
-                    <label for="exampleInputEmail3">Data de nascimento</label>
-                    <input type="date" class="form-control" id="exampleInputEmail3" />
+                    <label for="dateBirth">Data de nascimento</label>
+                    <input type="date" class="form-control" id="dateBirth" />
+                    <span class="text-danger small" id="errorMessageDateBirth"></span>
                   </div>
                   <div class="form-group col-md-3">
-                    <label for="exampleInputCPF">CPF (opcional)</label>
+                    <label for="studentCPF">CPF (opcional)</label>
+                    <input type="text" class="form-control" id="studentCPF" />
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="studentRG">RG (opcional)</label>
+                    <input type="text" class="form-control" id="studentRG" />
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="nacionality">Nacionalidade</label>
                     <input
                       type="text"
                       class="form-control"
-                      id="exampleInputCPF"
-                      placeholder="___.____.___-__"
-                    />
-                  </div>
-                  <div class="form-group col-md-3">
-                    <label for="exampleInputRG">RG (opcional)</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="exampleInputRG"
-                      placeholder="___.____.___-__"
-                    />
-                  </div>
-                  <div class="form-group col-md-3">
-                    <label for="exampleInputNacionality">Nacionalidade</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="exampleInputNacionality"
+                      id="nacionality"
                       placeholder="Ex: Brasileiro"
                     />
+                    <span class="text-danger small" id="errorMessageNacionality"></span>
                   </div>
                   <div class="form-group col-md-3">
-                    <label for="exampleSelectGender">Genêro</label>
-                    <select class="form-control" id="exampleSelectGender">
-                      <option>Masculino</option>
-                      <option>Feminino</option>
+                    <label for="selectGender">Genêro</label>
+                    <select class="form-control" id="selectGender">
+                      <option value="default">Selecione uma opção</option>
+                      <option value="man">Masculino</option>
+                      <option value="girl">Feminino</option>
                     </select>
+                    <span class="text-danger small" id="errorMessageSelectGender"></span>
                   </div>
                   <div class="form-group col-md-3">
-                    <label for="examplestreet">Logradouro</label>
+                    <label for="street">Logradouro</label>
                     <input
                       type="text"
                       class="form-control"
-                      id="examplestreet"
+                      id="street"
                       placeholder="Ex: Rua Itamonhangaba"
                     />
+                    <span class="text-danger small" id="errorMessageStreet"></span>
                   </div>
                   <div class="form-group col-md-1">
-                    <label for="exampleStreetNumber">Número</label>
+                    <label for="streetNumber">Número</label>
                     <input
-                      type="text"
+                      type="number"
                       class="form-control"
-                      id="exampleStreetNumber"
-                      placeholder="Número"
+                      id="streetNumber"
+                      placeholder="06"
                     />
+
+                    <span class="text-danger small" id="errorMessageStreetNumber"></span>
                   </div>
                   <div class="form-group col-md-2">
-                    <label for="complement">Complemento</label>
+                    <label for="complement">Complemento (opcional)</label>
                     <input
                       type="text"
                       class="form-control"
@@ -344,6 +280,7 @@
                       id="district"
                       placeholder="Jardim Joana Darc"
                     />
+                    <span class="text-danger small" id="errorMessageDistrict"></span>
                   </div>
                   <div class="form-group col-md-3">
                     <label for="city">Cidade</label>
@@ -353,6 +290,7 @@
                       id="city"
                       placeholder="São Paulo"
                     />
+                    <span class="text-danger small" id="errorMessageCity"></span>
                   </div>
                   <div class="form-group col-md-3">
                     <label for="state">Estado</label>
@@ -362,10 +300,13 @@
                       id="state"
                       placeholder="São Paulo"
                     />
+                    <span class="text-danger small" id="errorMessageState"></span>
                   </div>
                   <div class="form-group col-md-3">
-                    <label for="CEP">CEP</label>
-                    <input type="text" class="form-control" id="CEP" placeholder="19470-000" />
+                    <label for="cep">CEP</label>
+                    <input type="text" class="form-control" id="cep" />
+
+                    <span class="text-danger small" id="errorMessageCep"></span>
                   </div>
                 </div>
 
@@ -373,141 +314,85 @@
 
                 <div class="forms-sample w-100 row">
                   <div class="form-group col-md-3">
-                    <label for="exampleInputName1">Nome </label>
+                    <label for="responsibleName">Nome </label>
                     <input
                       type="text"
                       class="form-control"
-                      id="exampleInputName1"
+                      id="responsibleName"
                       placeholder="Nome"
                     />
+                    <span class="text-danger small" id="errorMessageResponsibleName"></span>
                   </div>
                   <div class="form-group col-md-3">
-                    <label for="exampleInputEmail3">Data de nascimento</label>
-                    <input type="date" class="form-control" id="exampleInputEmail3" />
+                    <label for="responsibleDateBirth">Data de nascimento</label>
+                    <input type="date" class="form-control" id="responsibleDateBirth" />
+                    <span class="text-danger small" id="errorMessageResponsibleDateBirth"></span>
                   </div>
                   <div class="form-group col-md-3">
-                    <label for="InputCPF">CPF</label>
+                    <label for="responsibleCpf">CPF</label>
+                    <input type="text" class="form-control" id="responsibleCpf" />
+                    <span class="text-danger small" id="errorMessageResponsibleCpf"></span>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="responsibleRg">RG</label>
+                    <input type="text" class="form-control" id="responsibleRg" />
+                    <span class="text-danger small" id="errorMessageResponsibleRg"></span>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="responsiblePhone">Telefone</label>
+                    <input type="text" class="form-control" id="responsiblePhone" />
+                    <span class="text-danger small" id="errorMessageResponsiblePhone"></span>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="responsibleNacionality">Nacionalidade</label>
                     <input
                       type="text"
                       class="form-control"
-                      id="InputCPF"
-                      placeholder="___.____.___-__"
-                    />
-                  </div>
-                  <div class="form-group col-md-3">
-                    <label for="InputRG">RG</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="InputRG"
-                      placeholder="___.____.___-__"
-                    />
-                  </div>
-                  <div class="form-group col-md-3">
-                    <label for="exampleInputNacionality">Nacionalidade</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="exampleInputNacionality"
+                      id="responsibleNacionality"
                       placeholder="Ex: Brasileiro"
                     />
+                    <span class="text-danger small" id="errorMessageResponsibleNacionality"></span>
                   </div>
                   <div class="form-group col-md-3">
-                    <label for="exampleSelectGender">Genêro</label>
-                    <select class="form-control" id="exampleSelectGender">
-                      <option>Masculino</option>
-                      <option>Feminino</option>
+                    <label for="responsibleGender">Genêro</label>
+                    <select class="form-control" id="responsibleGender">
+                      <option value="default">Selecione uma opção</option>
+                      <option value="man">Masculino</option>
+                      <option value="girl">Feminino</option>
                     </select>
+                    <span class="text-danger small" id="errorMessageResponsibleGender"></span>
                   </div>
-                  <div class="form-group col-md-3">
-                    <label for="examplestreet">Logradouro</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="examplestreet"
-                      placeholder="Ex: Rua Itamonhangaba"
-                    />
-                  </div>
-                  <div class="form-group col-md-1">
-                    <label for="exampleStreetNumber">Número</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="exampleStreetNumber"
-                      placeholder="Número"
-                    />
-                  </div>
-                  <div class="form-group col-md-2">
-                    <label for="complement">Complemento</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="complement"
-                      placeholder="Apt 6"
-                    />
-                  </div>
-                  <div class="form-group col-md-3">
-                    <label for="district">Bairro</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="district"
-                      placeholder="Jardim Joana Darc"
-                    />
-                  </div>
-                  <div class="form-group col-md-3">
-                    <label for="city">Cidade</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="city"
-                      placeholder="São Paulo"
-                    />
-                  </div>
-                  <div class="form-group col-md-3">
-                    <label for="state">Estado</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="state"
-                      placeholder="São Paulo"
-                    />
-                  </div>
-                  <div class="form-group col-md-3">
-                    <label for="CEP">CEP</label>
-                    <input type="text" class="form-control" id="CEP" placeholder="19470-000" />
-                  </div>
-                </div>
 
-                <div class="form-group col-md-4">
+                  <div class="form-group col-md-3 d-flex align-items-end">
+                    <div class="form-check form-check-flat form-check-primary">
+                      <label class="form-check-label">
+                        O endereço do responsável é o mesmo do aluno
+                        <input type="checkbox" class="form-check-input" id="isSameAddress" />
+                      </label>
+                    </div>
+                  </div>
+
+                
+
+             
+                <div class="form-group col-md-3 d-flex align-items-end">
                   <div class="form-check form-check-flat form-check-primary">
-                    <label class="form-check-label">
-                      <input type="checkbox" class="form-check-input" /> O termo será assinado
+                    <label class="form-check-label" >
+                      <input type="checkbox" class="form-check-input" id="digitalTerm" /> O termo será assinado
                       digitalmente
                     </label>
                   </div>
 
-                  <label class="mt-2"> Termo de compromisso</label>
-                  <input type="file" name="img[]" class="file-upload-default" />
-                  <div class="input-group col-xs-12">
-                    <input
-                      type="text"
-                      class="form-control file-upload-info"
-                      disabled
-                      placeholder="Enviar termo assinado"
-                    />
-                    <span class="input-group-append">
-                      <button class="file-upload-browse btn btn-primary" type="button">
-                        Upload
-                      </button>
-                    </span>
-                  </div>
+                 
                 </div>
 
+               
+
                 <div class="form-group col-md-12">
-                  <button type="submit" class="btn btn-primary mr-2">Avançar</button>
+               </div>
+                  <button type="submit" class="btn btn-primary mr-2">Concluir</button>
                   <button class="btn btn-light">Cancelar</button>
-                </div>
+               
               </form>
             </div>
           </div>
@@ -525,5 +410,9 @@
     <script src="../../assets/js/misc.js"></script>
 
     <script src="../../assets/js/dashboard.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script type="module" src="../../assets/js/matriculas/matriculas.js"></script>
+    <script src="../../assets/js/matriculas/nova-matricula.js"></script>
   </body>
 </html>
