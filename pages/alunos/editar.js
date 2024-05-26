@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded',function(){
 
     //Validação do campo Estado
     estadoInput.addEventListener('input',function(event){
-        if(event.target.value.trim().length <=18){
+        if(event.target.value.trim().length <=19){
             estadoInput.setCustomValidity('')
             estadoInput.classList.remove('is-invalid')
             estadoInput.classList.add('is-valid')
@@ -44,13 +44,13 @@ document.addEventListener('DOMContentLoaded',function(){
             estadoInput.setCustomValidity('')
             estadoInput.classList.remove('is-valid')
             estadoInput.classList.add('is-invalid')
-            estadoFeedback.textContent = 'Estado não deve ter mais de 16 caracteres...'
+            estadoFeedback.textContent = 'Estado não deve ter mais de 19 caracteres...'
         }
     })
 
     //Validação do campo Número
     numeroInput.addEventListener('input',function(event){
-        if(event.target.value.trim().length <=10){
+        if(event.target.value.trim().length <=5){
             numeroInput.setCustomValidity('')
             numeroInput.classList.remove('is-invalid')
             numeroInput.classList.add('is-valid')
