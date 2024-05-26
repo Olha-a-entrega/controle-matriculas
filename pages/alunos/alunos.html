@@ -197,162 +197,295 @@
               <h2 class="text-dark font-weight-bold mb-2">Gerenciar Aluno</h2>
               <div class="d-sm-flex justify-content-xl-between align-items-center mb-2">
                 <div class="btn-group bg-white p-3" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-link text-dark py-0 border-right">
-                  <a class="text-dark" href="../alunos/alunos.html"> Listar alunos matriculados</a></button>
-                <button type="button" class="btn btn-link text-light py-0 border-right">
-                  <a class="text-light" href="../alunos/relatorio.html">Gerar Relatório</a></button>
+                  <button type="button" class="btn btn-link text-dark py-0 border-right">
+                    <a class="text-dark" href="../alunos/alunos.html">
+                      Listar alunos matriculados</a
+                    >
+                  </button>
+                  <button type="button" class="btn btn-link text-light py-0 border-right">
+                    <a class="text-light" href="../alunos/relatorio.html">Gerar Relatório</a>
+                  </button>
                 </div>
               </div>
             </div>
-                  
-      
-          <!--Lista de alunos matriculados-->
-      
-          <div class="col-lg-12 grid-margin stretch-card">
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">Lista de alunos matriculados</h4>
-                
-                <table class="table table-striped">
-                  <thead>
-                    <tr>
-                      <th>Aluno</th>
-                      <th>Nome Completo</th>
-                      <th>Série/Ano</th>
-                      <th>Data de matrícula</th>
-                      
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="py-1">
-                        <img
-                          src="../../assets/images/faces-clipart/pic-1.png"
-                          alt="image"
-                        />
-                      </td>
-                      <td>João Pedro Souza Santos	</td>
-                      <td>2º ano A</td>
-                      <td>01/02/2023</td>
-                      <td><a href="../alunos/editar.html" class="text-dark"><i class="mdi mdi-border-color" title="Editar"></i></a></td>
-                      <td><a href="../alunos/visualizar.html" class="text-dark"><i class="mdi mdi-magnify" title="Visualizar informações"></i></a></td>
-                      <td><a href="../alunos/historico.html" class="text-dark"><i class="mdi mdi-folder-account" title="Ver histórico do aluno"></i></a></td>
-                      <td><a href="#" class="text-dark" 
-                        onclick="alert(`ATENÇÃO!\nTem certeza que deseja excluir a matrícula? \nEsta ação é irreversível e poderá gerar transtornos para o aluno. `),
-                        confirm(`Confirme a exclusão clicando em 'OK' abaixo. \n\nCaso contrário, clique em 'CANCELAR'.`)">
-                        <i class="mdi mdi-delete" title="Excluir matrícula"></i></a></td>
-                    </tr>
-                    <tr>
-                      <td class="py-1">
-                        <img
-                          src="../../assets/images/faces-clipart/pic-2.png"
-                          alt="image"
-                        />
-                      </td>
-                      <td>Ana Luiza Silva Oliveira</td>
-                      <td>2º ano C</td>
-                      <td>15/03/2023</td>
-                      <td><a href="../alunos/editar.html" class="text-dark"><i class="mdi mdi-border-color" title="Editar"></i></a></td>
-                      <td><a href="../alunos/visualizar.html" class="text-dark"><i class="mdi mdi-magnify" title="Visualizar informações"></i></a></td>
-                      <td><a href="../alunos/historico.html" class="text-dark"><i class="mdi mdi-folder-account" title="Ver histórico do aluno"></i></a></td>
-                      <td><a href="#" class="text-dark" 
-                        onclick="alert(`ATENÇÃO!\nTem certeza que deseja excluir a matrícula? \nEsta ação é irreversível e poderá gerar transtornos para o aluno. `),
-                        confirm(`Confirme a exclusão clicando em 'OK' abaixo. \n\nCaso contrário, clique em 'CANCELAR'.`)">
-                        <i class="mdi mdi-delete" title="Excluir matrícula"></i></a></td>              </tr>
-                    <tr>
-                      <td class="py-1">
-                        <img
-                          src="../../assets/images/faces-clipart/pic-3.png"
-                          alt="image"
-                        />
-                      </td>
-                      <td>Beatriz Mendes Costa</td>
-                      <td>3º ano A</td>
-                      <td>10/08/2022</td>
-                      <td><a href="../alunos/editar.html" class="text-dark"><i class="mdi mdi-border-color" title="Editar"></i></a></td>
-                      <td><a href="../alunos/visualizar.html" class="text-dark"><i class="mdi mdi-magnify" title="Visualizar informações"></i></a></td>
-                      <td><a href="../alunos/historico.html" class="text-dark"><i class="mdi mdi-folder-account" title="Ver histórico do aluno"></i></a></td>
-                      <td><a href="#" class="text-dark" 
-                        onclick="alert(`ATENÇÃO!\nTem certeza que deseja excluir a matrícula? \nEsta ação é irreversível e poderá gerar transtornos para o aluno. `),
-                        confirm(`Confirme a exclusão clicando em 'OK' abaixo. \n\nCaso contrário, clique em 'CANCELAR'.`)">
-                        <i class="mdi mdi-delete" title="Excluir matrícula"></i></a></td>              </tr>
-                    <tr>
-                      <td class="py-1">
-                        <img
-                          src="../../assets/images/faces-clipart/pic-4.png"
-                          alt="image"
-                        />
-                      </td>
-                      <td>Guilherme Pereira Dias</td>
-                      <td>3º ano A</td>
-                      <td>22/05/2023</td>
-                      <td><a href="../alunos/editar.html" class="text-dark"><i class="mdi mdi-border-color" title="Editar"></i></a></td>
-                      <td><a href="../alunos/visualizar.html" class="text-dark"><i class="mdi mdi-magnify" title="Visualizar informações"></i></a></td>
-                      <td><a href="../alunos/historico.html" class="text-dark"><i class="mdi mdi-folder-account" title="Ver histórico do aluno"></i></a></td>
-                      <td><a href="#" class="text-dark" 
-                        onclick="alert(`ATENÇÃO!\nTem certeza que deseja excluir a matrícula? \nEsta ação é irreversível e poderá gerar transtornos para o aluno. `),
-                        confirm(`Confirme a exclusão clicando em 'OK' abaixo. \n\nCaso contrário, clique em 'CANCELAR'.`)">
-                        <i class="mdi mdi-delete" title="Excluir matrícula"></i></a></td>              </tr>
-                    <tr>
-                      <td class="py-1">
-                        <img
-                          src="../../assets/images/faces-clipart/pic-1.png"
-                          alt="image"
-                        />
-                      </td>
-                      <td>Davi Ferreira Lima	</td>
-                      <td>2º ano C</td>
-                      <td>05/07/2022</td>
-                      <td><a href="../alunos/editar.html" class="text-dark"><i class="mdi mdi-border-color" title="Editar"></i></a></td>
-                      <td><a href="../alunos/visualizar.html" class="text-dark"><i class="mdi mdi-magnify" title="Visualizar informações"></i></a></td>
-                      <td><a href="../alunos/historico.html" class="text-dark"><i class="mdi mdi-folder-account" title="Ver histórico do aluno"></i></a></td>
-                      <td><a href="#" class="text-dark" 
-                        onclick="alert(`ATENÇÃO!\nTem certeza que deseja excluir a matrícula? \nEsta ação é irreversível e poderá gerar transtornos para o aluno. `),
-                        confirm(`Confirme a exclusão clicando em 'OK' abaixo. \n\nCaso contrário, clique em 'CANCELAR'.`)">
-                        <i class="mdi mdi-delete" title="Excluir matrícula"></i></a></td>              </tr>
-                    <tr>
-                      <td class="py-1">
-                        <img
-                          src="../../assets/images/faces-clipart/pic-2.png"
-                          alt="image"
-                        />
-                      </td>
-                      <td>Laura Martins Rodrigues	</td>
-                      <td>3º ano B</td>
-                      <td>04/04/2023</td>
-                      <td><a href="../alunos/editar.html" class="text-dark"><i class="mdi mdi-border-color" title="Editar"></i></a></td>
-                      <td><a href="../alunos/visualizar.html" class="text-dark"><i class="mdi mdi-magnify" title="Visualizar informações"></i></a></td>
-                      <td><a href="../alunos/historico.html" class="text-dark"><i class="mdi mdi-folder-account" title="Ver histórico do aluno"></i></a></td>
-                      <td><a href="#" class="text-dark" 
-                        onclick="alert(`ATENÇÃO!\nTem certeza que deseja excluir a matrícula? \nEsta ação é irreversível e poderá gerar transtornos para o aluno. `),
-                        confirm(`Confirme a exclusão clicando em 'OK' abaixo. \n\nCaso contrário, clique em 'CANCELAR'.`)">
-                        <i class="mdi mdi-delete" title="Excluir matrícula"></i></a></td>              </tr>
-                    <tr>
-                      <td class="py-1">
-                        <img
-                          src="../../assets/images/faces-clipart/pic-3.png"
-                          alt="image"
-                        />
-                      </td>
-                      <td>Isabella Rocha Cardoso	</td>
-                      <td>2º ano B</td>
-                      <td>07/06/2023</td>
-                      <td><a href="../alunos/editar.html" class="text-dark"><i class="mdi mdi-border-color" title="Editar"></i></a></td>
-                      <td><a href="../alunos/visualizar.html" class="text-dark"><i class="mdi mdi-magnify" title="Visualizar informações"></i></a></td>
-                      <td><a href="../alunos/historico.html" class="text-dark"><i class="mdi mdi-folder-account" title="Ver histórico do aluno"></i></a></td>
-                      <td><a href="#" class="text-dark" 
-                        onclick="alert(`ATENÇÃO!\nTem certeza que deseja excluir a matrícula? \nEsta ação é irreversível e poderá gerar transtornos para o aluno. `),
-                        confirm(`Confirme a exclusão clicando em 'OK' abaixo. \n\nCaso contrário, clique em 'CANCELAR'.`)">
-                        <i class="mdi mdi-delete" title="Excluir matrícula"></i></a></td>              </tr>
-                  </tbody>
-                </table>
+
+            <!--Lista de alunos matriculados-->
+
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Lista de alunos matriculados</h4>
+
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>Aluno</th>
+                        <th>Nome Completo</th>
+                        <th>Série/Ano</th>
+                        <th>Data de matrícula</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="py-1">
+                          <img src="../../assets/images/faces-clipart/pic-1.png" alt="image" />
+                        </td>
+                        <td>João Pedro Souza Santos</td>
+                        <td>2º ano A</td>
+                        <td>01/02/2023</td>
+                        <td>
+                          <a href="../alunos/editar.html" class="text-dark"
+                            ><i class="mdi mdi-border-color" title="Editar"></i
+                          ></a>
+                        </td>
+                        <td>
+                          <a href="../alunos/visualizar.html" class="text-dark"
+                            ><i class="mdi mdi-magnify" title="Visualizar informações"></i
+                          ></a>
+                        </td>
+                        <td>
+                          <a href="../alunos/historico.html" class="text-dark"
+                            ><i
+                              class="mdi mdi-folder-account"
+                              title="Ver histórico do aluno"
+                            ></i
+                          ></a>
+                        </td>
+                        <td>
+                          <a
+                            href="#"
+                            class="text-dark"
+                            onclick="alert(`ATENÇÃO!\nTem certeza que deseja excluir a matrícula? \nEsta ação é irreversível e poderá gerar transtornos para o aluno. `),
+                        confirm(`Confirme a exclusão clicando em 'OK' abaixo. \n\nCaso contrário, clique em 'CANCELAR'.`)"
+                          >
+                            <i class="mdi mdi-delete" title="Excluir matrícula"></i
+                          ></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-1">
+                          <img src="../../assets/images/faces-clipart/pic-2.png" alt="image" />
+                        </td>
+                        <td>Ana Luiza Silva Oliveira</td>
+                        <td>2º ano C</td>
+                        <td>15/03/2023</td>
+                        <td>
+                          <a href="../alunos/editar.html" class="text-dark"
+                            ><i class="mdi mdi-border-color" title="Editar"></i
+                          ></a>
+                        </td>
+                        <td>
+                          <a href="../alunos/visualizar.html" class="text-dark"
+                            ><i class="mdi mdi-magnify" title="Visualizar informações"></i
+                          ></a>
+                        </td>
+                        <td>
+                          <a href="../alunos/historico.html" class="text-dark"
+                            ><i
+                              class="mdi mdi-folder-account"
+                              title="Ver histórico do aluno"
+                            ></i
+                          ></a>
+                        </td>
+                        <td>
+                          <a
+                            href="#"
+                            class="text-dark"
+                            onclick="alert(`ATENÇÃO!\nTem certeza que deseja excluir a matrícula? \nEsta ação é irreversível e poderá gerar transtornos para o aluno. `),
+                        confirm(`Confirme a exclusão clicando em 'OK' abaixo. \n\nCaso contrário, clique em 'CANCELAR'.`)"
+                          >
+                            <i class="mdi mdi-delete" title="Excluir matrícula"></i
+                          ></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-1">
+                          <img src="../../assets/images/faces-clipart/pic-3.png" alt="image" />
+                        </td>
+                        <td>Beatriz Mendes Costa</td>
+                        <td>3º ano A</td>
+                        <td>10/08/2022</td>
+                        <td>
+                          <a href="../alunos/editar.html" class="text-dark"
+                            ><i class="mdi mdi-border-color" title="Editar"></i
+                          ></a>
+                        </td>
+                        <td>
+                          <a href="../alunos/visualizar.html" class="text-dark"
+                            ><i class="mdi mdi-magnify" title="Visualizar informações"></i
+                          ></a>
+                        </td>
+                        <td>
+                          <a href="../alunos/historico.html" class="text-dark"
+                            ><i
+                              class="mdi mdi-folder-account"
+                              title="Ver histórico do aluno"
+                            ></i
+                          ></a>
+                        </td>
+                        <td>
+                          <a
+                            href="#"
+                            class="text-dark"
+                            onclick="alert(`ATENÇÃO!\nTem certeza que deseja excluir a matrícula? \nEsta ação é irreversível e poderá gerar transtornos para o aluno. `),
+                        confirm(`Confirme a exclusão clicando em 'OK' abaixo. \n\nCaso contrário, clique em 'CANCELAR'.`)"
+                          >
+                            <i class="mdi mdi-delete" title="Excluir matrícula"></i
+                          ></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-1">
+                          <img src="../../assets/images/faces-clipart/pic-4.png" alt="image" />
+                        </td>
+                        <td>Guilherme Pereira Dias</td>
+                        <td>3º ano A</td>
+                        <td>22/05/2023</td>
+                        <td>
+                          <a href="../alunos/editar.html" class="text-dark"
+                            ><i class="mdi mdi-border-color" title="Editar"></i
+                          ></a>
+                        </td>
+                        <td>
+                          <a href="../alunos/visualizar.html" class="text-dark"
+                            ><i class="mdi mdi-magnify" title="Visualizar informações"></i
+                          ></a>
+                        </td>
+                        <td>
+                          <a href="../alunos/historico.html" class="text-dark"
+                            ><i
+                              class="mdi mdi-folder-account"
+                              title="Ver histórico do aluno"
+                            ></i
+                          ></a>
+                        </td>
+                        <td>
+                          <a
+                            href="#"
+                            class="text-dark"
+                            onclick="alert(`ATENÇÃO!\nTem certeza que deseja excluir a matrícula? \nEsta ação é irreversível e poderá gerar transtornos para o aluno. `),
+                        confirm(`Confirme a exclusão clicando em 'OK' abaixo. \n\nCaso contrário, clique em 'CANCELAR'.`)"
+                          >
+                            <i class="mdi mdi-delete" title="Excluir matrícula"></i
+                          ></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-1">
+                          <img src="../../assets/images/faces-clipart/pic-1.png" alt="image" />
+                        </td>
+                        <td>Davi Ferreira Lima</td>
+                        <td>2º ano C</td>
+                        <td>05/07/2022</td>
+                        <td>
+                          <a href="../alunos/editar.html" class="text-dark"
+                            ><i class="mdi mdi-border-color" title="Editar"></i
+                          ></a>
+                        </td>
+                        <td>
+                          <a href="../alunos/visualizar.html" class="text-dark"
+                            ><i class="mdi mdi-magnify" title="Visualizar informações"></i
+                          ></a>
+                        </td>
+                        <td>
+                          <a href="../alunos/historico.html" class="text-dark"
+                            ><i
+                              class="mdi mdi-folder-account"
+                              title="Ver histórico do aluno"
+                            ></i
+                          ></a>
+                        </td>
+                        <td>
+                          <a
+                            href="#"
+                            class="text-dark"
+                            onclick="alert(`ATENÇÃO!\nTem certeza que deseja excluir a matrícula? \nEsta ação é irreversível e poderá gerar transtornos para o aluno. `),
+                        confirm(`Confirme a exclusão clicando em 'OK' abaixo. \n\nCaso contrário, clique em 'CANCELAR'.`)"
+                          >
+                            <i class="mdi mdi-delete" title="Excluir matrícula"></i
+                          ></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-1">
+                          <img src="../../assets/images/faces-clipart/pic-2.png" alt="image" />
+                        </td>
+                        <td>Laura Martins Rodrigues</td>
+                        <td>3º ano B</td>
+                        <td>04/04/2023</td>
+                        <td>
+                          <a href="../alunos/editar.html" class="text-dark"
+                            ><i class="mdi mdi-border-color" title="Editar"></i
+                          ></a>
+                        </td>
+                        <td>
+                          <a href="../alunos/visualizar.html" class="text-dark"
+                            ><i class="mdi mdi-magnify" title="Visualizar informações"></i
+                          ></a>
+                        </td>
+                        <td>
+                          <a href="../alunos/historico.html" class="text-dark"
+                            ><i
+                              class="mdi mdi-folder-account"
+                              title="Ver histórico do aluno"
+                            ></i
+                          ></a>
+                        </td>
+                        <td>
+                          <a
+                            href="#"
+                            class="text-dark"
+                            onclick="alert(`ATENÇÃO!\nTem certeza que deseja excluir a matrícula? \nEsta ação é irreversível e poderá gerar transtornos para o aluno. `),
+                        confirm(`Confirme a exclusão clicando em 'OK' abaixo. \n\nCaso contrário, clique em 'CANCELAR'.`)"
+                          >
+                            <i class="mdi mdi-delete" title="Excluir matrícula"></i
+                          ></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-1">
+                          <img src="../../assets/images/faces-clipart/pic-3.png" alt="image" />
+                        </td>
+                        <td>Isabella Rocha Cardoso</td>
+                        <td>2º ano B</td>
+                        <td>07/06/2023</td>
+                        <td>
+                          <a href="../alunos/editar.html" class="text-dark"
+                            ><i class="mdi mdi-border-color" title="Editar"></i
+                          ></a>
+                        </td>
+                        <td>
+                          <a href="../alunos/visualizar.html" class="text-dark"
+                            ><i class="mdi mdi-magnify" title="Visualizar informações"></i
+                          ></a>
+                        </td>
+                        <td>
+                          <a href="../alunos/historico.html" class="text-dark"
+                            ><i
+                              class="mdi mdi-folder-account"
+                              title="Ver histórico do aluno"
+                            ></i
+                          ></a>
+                        </td>
+                        <td>
+                          <a
+                            href="#"
+                            class="text-dark"
+                            onclick="alert(`ATENÇÃO!\nTem certeza que deseja excluir a matrícula? \nEsta ação é irreversível e poderá gerar transtornos para o aluno. `),
+                        confirm(`Confirme a exclusão clicando em 'OK' abaixo. \n\nCaso contrário, clique em 'CANCELAR'.`)"
+                          >
+                            <i class="mdi mdi-delete" title="Excluir matrícula"></i
+                          ></a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
-          </div>
-          
         </div>
-      </div>      
+      </div>
       <!-- page-body-wrapper ends -->
     </div>
     <!-- container-scroller -->
