@@ -244,10 +244,11 @@
                         <td><label class="badge badge-danger">Desistente</label></td>
                         <td>
                           <div class="d-flex">
-                            <button class="bg-transparent border-0">
-                              <i class="mdi mdi-eye"></i>
-                            </button>
-                            <button class="bg-transparent border-0">
+                            <button
+                              class="bg-transparent border-0"
+                              data-toggle="modal"
+                              data-target="#modalCenter"
+                            >
                               <i class="mdi mdi-delete"></i>
                             </button>
                           </div>
@@ -266,10 +267,11 @@
                         </td>
                         <td>
                           <div class="d-flex">
-                            <button class="bg-transparent border-0">
-                              <i class="mdi mdi-eye"></i>
-                            </button>
-                            <button class="bg-transparent border-0">
+                            <button
+                              class="bg-transparent border-0"
+                              data-toggle="modal"
+                              data-target="#modalCenter"
+                            >
                               <i class="mdi mdi-delete"></i>
                             </button>
                           </div>
@@ -288,10 +290,11 @@
                         </td>
                         <td>
                           <div class="d-flex">
-                            <button class="bg-transparent border-0">
-                              <i class="mdi mdi-eye"></i>
-                            </button>
-                            <button class="bg-transparent border-0">
+                            <button
+                              class="bg-transparent border-0"
+                              data-toggle="modal"
+                              data-target="#modalCenter"
+                            >
                               <i class="mdi mdi-delete"></i>
                             </button>
                           </div>
@@ -312,10 +315,11 @@
                         </td>
                         <td>
                           <div class="d-flex">
-                            <button class="bg-transparent border-0">
-                              <i class="mdi mdi-eye"></i>
-                            </button>
-                            <button class="bg-transparent border-0">
+                            <button
+                              class="bg-transparent border-0"
+                              data-toggle="modal"
+                              data-target="#modalCenter"
+                            >
                               <i class="mdi mdi-delete"></i>
                             </button>
                           </div>
@@ -334,10 +338,11 @@
                         </td>
                         <td>
                           <div class="d-flex">
-                            <button class="bg-transparent border-0">
-                              <i class="mdi mdi-eye"></i>
-                            </button>
-                            <button class="bg-transparent border-0">
+                            <button
+                              class="bg-transparent border-0"
+                              data-toggle="modal"
+                              data-target="#modalCenter"
+                            >
                               <i class="mdi mdi-delete"></i>
                             </button>
                           </div>
@@ -356,10 +361,11 @@
                         </td>
                         <td>
                           <div class="d-flex">
-                            <button class="bg-transparent border-0">
-                              <i class="mdi mdi-eye"></i>
-                            </button>
-                            <button class="bg-transparent border-0">
+                            <button
+                              class="bg-transparent border-0"
+                              data-toggle="modal"
+                              data-target="#modalCenter"
+                            >
                               <i class="mdi mdi-delete"></i>
                             </button>
                           </div>
@@ -385,10 +391,11 @@
                         </td>
                         <td>
                           <div class="d-flex">
-                            <button class="bg-transparent border-0">
-                              <i class="mdi mdi-eye"></i>
-                            </button>
-                            <button class="bg-transparent border-0">
+                            <button
+                              class="bg-transparent border-0"
+                              data-toggle="modal"
+                              data-target="#modalCenter"
+                            >
                               <i class="mdi mdi-delete"></i>
                             </button>
                           </div>
@@ -409,10 +416,11 @@
                         </td>
                         <td>
                           <div class="d-flex">
-                            <button class="bg-transparent border-0">
-                              <i class="mdi mdi-eye"></i>
-                            </button>
-                            <button class="bg-transparent border-0">
+                            <button
+                              class="bg-transparent border-0"
+                              data-toggle="modal"
+                              data-target="#modalCenter"
+                            >
                               <i class="mdi mdi-delete"></i>
                             </button>
                           </div>
@@ -420,6 +428,94 @@
                       </tr>
                     </tbody>
                   </table>
+                </div>
+
+                <div
+                  class="modal fade"
+                  id="concludedSolicitation"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="exampleModalCenterTitle"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">
+                          Solicitação de cancelamento concluída
+                        </h5>
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body text-dark">
+                        O cancelamento da matricula foi solicitado. Um e-mail foi enviado para
+                        você com os documentos necessários para concluir o cancelamento
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-dismiss="modal">
+                          Cancelar
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-danger"
+                          id="accept"
+                          data-dismiss="modal"
+                        >
+                          Concluir
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="modal fade"
+                  id="modalCenter"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="exampleModalCenterTitle"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">
+                          Solicitar cancelamento de matrícula
+                        </h5>
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body text-dark">
+                        Tem certeza que deseja solicitar o cancelamento da matrícula?
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-dismiss="modal">
+                          Cancelar
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-danger"
+                          id="accept"
+                          data-dismiss="modal"
+                          data-toggle="modal"
+                          data-target="#concludedSolicitation"
+                        >
+                          Concluir
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
