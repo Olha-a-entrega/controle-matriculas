@@ -29,7 +29,7 @@ function createTable() {
             <th>Dia da Semana</th>
             <th>Horário</th>
             <th>Status</th>
-            <th></th>
+       
           </tr>
         `;
   table.appendChild(header);
@@ -46,13 +46,7 @@ function createTable() {
             <td><label class="badge badge-${
               item.status === "Incompleta" ? "danger" : "success"
             }">${item.status}</label></td>
-            <td>
-              <div class="d-flex">
-                <button class="bg-transparent border-0">
-                  <i class="mdi mdi-eye"></i>
-                </button>
-              </div>
-            </td>
+            
           `;
     body.appendChild(row);
   });
