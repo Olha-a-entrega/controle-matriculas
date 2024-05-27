@@ -12,11 +12,14 @@ document.addEventListener('DOMContentLoaded', function() {
   // Adiciona um evento de clique a cada botão
   removeTurmaButtons.forEach(function(button) {
     button.addEventListener('click', function() {
-      // Obtém a linha da tabela que contém o botão clicado
-      var row = this.closest('tr');
+      // Pergunta ao usuário se ele tem certeza de que deseja remover a turma
+      var confirmacao = confirm("Tem certeza de que deseja remover esta turma?");
       
-      // Remove a linha da tabela
-      row.parentNode.removeChild(row);
+      // Se o usuário confirmar, remove a linha da tabela
+      if (confirmacao) {
+        var row = this.closest('tr');
+        row.parentNode.removeChild(row);
+      }
     });
   });
 });
