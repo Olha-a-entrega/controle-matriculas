@@ -87,11 +87,11 @@ export const sidebarItems = [
     menuTitle: "Despesas",
     subItems: [
       {
-        href: "../../pages/samples/blank-page.html",
+        href: "../despesas/contas-a-pagar.html",
         menuTitle: "Contas a pagar",
       },
       {
-        href: "../../pages/samples/login.html",
+        href: "../despesas/contas-a-receber.html",
         menuTitle: "Contas a receber",
       },
     ],

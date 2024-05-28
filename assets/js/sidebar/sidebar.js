@@ -29,12 +29,12 @@ export function createSidebar(sidebar) {
 <div class="collapse" id="auth">
   <ul class="nav flex-column sub-menu">
     <li class="nav-item">
-      <a class="nav-link" href="../../pages/samples/blank-page.html">
+      <a class="nav-link" href='${item.subItems[0]["href"]}'>
         Contas a pagar
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="../../pages/samples/login.html">
+      <a class="nav-link" href='${item.subItems[1]["href"]}'>
         Contas a receber
       </a>
     </li>
